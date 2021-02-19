@@ -1,0 +1,16 @@
+{
+	"name": "Youtube Keyboard Navigation",
+	"version": "0.0.1",
+	"manifest_version": 2,
+	"description": "",
+	"homepage_url": "http://apringle.dev",
+	"icons": {},
+	"options_page": "src/options/index.html",
+	"permissions": [],
+	"content_scripts": [
+		{
+			"matches": ["https://www.youtube.com/*"],
+			"js": ["src/inject/inject.js"]
+		}
+	]
+}
