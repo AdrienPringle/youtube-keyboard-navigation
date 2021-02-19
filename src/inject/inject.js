@@ -1,4 +1,4 @@
-const settings = {
+let settings = {
 	up: 87,
 	down: 83,
 	left: 65,
@@ -6,6 +6,9 @@ const settings = {
 	home: 81,
 	sub: 69,
 };
+chrome.storage.sync.get(settings, (result) => {
+	settings = result;
+});
 
 const config = [
 	{

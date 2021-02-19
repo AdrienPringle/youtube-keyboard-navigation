@@ -6,7 +6,7 @@
 	"homepage_url": "http://apringle.dev",
 	"icons": {},
 	"options_page": "src/options/index.html",
-	"permissions": [],
+	"permissions": ["storage"],
 	"content_scripts": [
 		{
 			"matches": ["https://www.youtube.com/*"],
